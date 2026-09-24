@@ -1,4 +1,4 @@
-# Based on Matt Macarty's Python OOP tutorials, parts 1-4.
+# Based on Prof Macarty's Python OOP tutorials: parts 1-4.
 # https://github.com/mjmacarty/intro-python-oop
 
 import datetime as dt
