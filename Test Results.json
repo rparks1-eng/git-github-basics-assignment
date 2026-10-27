@@ -1,0 +1,75 @@
+{
+  "method": "Streamlit AppTest runs actual widget callbacks and reads rendered outputs; not a browser screenshot or manual student test.",
+  "prediction_source": "Brandon supplied six predictions in chat before the first test run.",
+  "one_shot_commit": "9289e82",
+  "rows": [
+    {
+      "sales": 40000,
+      "user_prediction": 4000,
+      "one_shot_output": "Commission: $4,000.00",
+      "one_shot_match": true,
+      "spec_output": "Commission: $4,000.00",
+      "spec_match": true
+    },
+    {
+      "sales": 50000,
+      "user_prediction": 5000,
+      "one_shot_output": "Commission: $5,000.00",
+      "one_shot_match": true,
+      "spec_output": "Commission: $5,000.00",
+      "spec_match": true
+    },
+    {
+      "sales": 50001,
+      "user_prediction": 7500.15,
+      "one_shot_output": "Commission: $5,000.15",
+      "one_shot_match": false,
+      "spec_output": "Commission: $7,500.15",
+      "spec_match": true
+    },
+    {
+      "sales": 80000,
+      "user_prediction": 12000,
+      "one_shot_output": "Commission: $9,500.00",
+      "one_shot_match": false,
+      "spec_output": "Commission: $12,000.00",
+      "spec_match": true
+    },
+    {
+      "sales": 0,
+      "user_prediction": 0,
+      "one_shot_output": "Commission: $0.00",
+      "one_shot_match": true,
+      "spec_output": "Commission: $0.00",
+      "spec_match": true
+    },
+    {
+      "sales": -5000,
+      "user_prediction": 0,
+      "one_shot_output": "Commission: $-500.00",
+      "one_shot_match": false,
+      "spec_output": "Commission: $0.00",
+      "spec_match": true
+    }
+  ],
+  "invalid_inputs_checked": [
+    "",
+    " ",
+    "abc",
+    "NaN",
+    "inf",
+    "1e6",
+    "1,000",
+    "$100",
+    "1.234",
+    "1000000000000"
+  ],
+  "additional_checks": [
+    "threshold cents",
+    "half-up cent rounding",
+    "surrounding spaces",
+    "maximum supported amount",
+    "no stale displayed answer"
+  ],
+  "checks_passed": 27
+}
