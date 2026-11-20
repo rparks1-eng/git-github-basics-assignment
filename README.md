@@ -59,3 +59,13 @@ Do not upload your API key to GitHub.
 - [My GitHub profile](https://github.com/rparks1-eng)
 - [My other GitHub projects](https://github.com/rparks1-eng?tab=repositories)
 - [Pxpress LLC](https://pxpressllc.com/) - My father's luxury transportation business serving Cleveland and Northeast Ohio.
+
+
+## Activity 6 stock comparison
+
+The project `.venv` contains the packages pinned in requirements.txt.
+Run `uv pip install -r requirements.txt` after `uv venv --python 3.11` on a fresh
+checkout, then `.venv/bin/python -m streamlit run inclass-activity-06.py`.
+The verified browser flow compares AAPL with SPY and shows normalized prices
+and a Min/Max/Final summary. The answer document is retained in the existing
+AI App Development / In-Class Activity 06 folder rather than duplicated here.
